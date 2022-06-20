@@ -20,8 +20,3 @@ main {
 nav h1 a {
     font-weight: bolder;
 }
-
-.card .btn {
-    display: flex;
-    justify-content: center;
-}

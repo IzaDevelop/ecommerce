@@ -25,7 +25,7 @@
 
 <body>
     <header>
-        <nav class="navbar bg-light navbar-expand-lg sticky-top bg-light">
+        <nav class="navbar bg-light navbar-expand-lg bg-light">
             <div class="container-fluid">
                 <h1><a class="navbar-brand" href="#">VÊNUS</a></h1>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
@@ -44,7 +44,7 @@
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Lançamentos</a>
+                                <a class="nav-link" href="#">Consoles</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
@@ -52,17 +52,11 @@
                                     Jogos
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Ação e aventura</a></li>
+                                    <li><a class="dropdown-item" href="#populares">Populares</a></li>
                                     <hr class="dropdown-divider">
-                                    <li><a class="dropdown-item" href="#">Terror</a></li>
+                                    <li><a class="dropdown-item" href="#aventura">Ação e aventura</a></li>
                                     <hr class="dropdown-divider">
-                                    <li><a class="dropdown-item" href="#">Estratégia</a></li>
-                                    <hr class="dropdown-divider">
-                                    <li><a class="dropdown-item" href="#">RPG</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Puzzle</a></li>
+                                    <li><a class="dropdown-item" href="#terror">Terror</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -77,68 +71,153 @@
     </header>
     <main class="bg-dark text-light">
         <div class="container">
-            <h1 class="text-center mt-3">Populares</h1>
+            <h1 class="text-center mt-3" id="populares">Populares</h1>
             <hr>
-            <div class="row">
-                <div class="col-sm-12 col-md-6 col-lg-3" style="display: flex; justify-content: center;">
-                    <div class="card border-dark mb-3" style="max-width: 18rem;">
-                        <img src="imagens/the-witcher.webp" class="card-img-top" alt="The Witcher 3: Wild Hunt">
-                        <div class="card-body text-dark d-flex flex-column">
-                            <h5 class="card-title">The Witcher 3: Wild Hunt</h5>
-                            <p class="card-text">The Witcher 3: Wild Hunt é um RPG de ação em mundo aberto.</p>
-                            <a href="#" class="btn btn-outline-dark mt-auto">Comprar</a>
-                        </div>
+            <!-- <div class="row"> -->
+            <div class="slider">
+                <div class="card border-dark m-3">
+                    <img src="imagens/the-witcher.webp" class="card-img-top" alt="The Witcher 3: Wild Hunt">
+                    <div class="card-body text-dark d-flex flex-column">
+                        <h5 class="card-title">The Witcher 3: Wild Hunt</h5>
+                        <p class="card-text">The Witcher 3: Wild Hunt é um RPG de ação de mundo aberto.</p>
+                        <a href="#" class="btn btn-outline-dark mt-auto">Comprar</a>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-3" style="display: flex; justify-content: center;">
-                    <div class="card border-dark mb-3" style="max-width: 18rem;">
-                        <img src="imagens/dead-cells.webp" class="card-img-top" alt="Dead Cells">
-                        <div class="card-body text-dark d-flex flex-column">
-                            <h5 class="card-title">Dead Cells</h5>
-                            <p class="card-text">Dead Cells é um jogo de ação e plataforma, estilo rogue-lite.</p>
-                            <a href="#" class="btn btn-outline-dark mt-auto">Comprar</a>
-                        </div>
+                <div class="card border-dark m-3">
+                    <img src="imagens/dead-cells.webp" class="card-img-top" alt="Dead Cells">
+                    <div class="card-body text-dark d-flex flex-column">
+                        <h5 class="card-title">Dead Cells</h5>
+                        <p class="card-text">Dead Cells é um jogo de ação e plataforma, estilo rogue-lite.</p>
+                        <a href="#" class="btn btn-outline-dark mt-auto">Comprar</a>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-3" style="display:flex; justify-content: center;">
-                    <div class="card border-dark mb-3" style="max-width: 18rem;">
-                        <img src="imagens/stardew-valley.png" class="card-img-top" alt="Stardew Valley">
-                        <div class="card-body text-dark d-flex flex-column">
-                            <h5 class="card-title">Stardew Valley</h5>
-                            <p class="card-text">Stardew Valley é um RPG de simulação.</p>
-                            <a href="#" class="btn btn-outline-dark mt-auto">Comprar</a>
-                        </div>
+                <div class="card border-dark m-3">
+                    <img src="imagens/stardew-valley.png" class="card-img-top" alt="Stardew Valley">
+                    <div class="card-body text-dark d-flex flex-column">
+                        <h5 class="card-title">Stardew Valley</h5>
+                        <p class="card-text">Stardew Valley é um RPG de simulação.</p>
+                        <a href="#" class="btn btn-outline-dark mt-auto">Comprar</a>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-3" style="display: flex; justify-content: center;">
-                    <div class="card border-dark mb-3" style="max-width: 18rem;">
-                        <img src="imagens/minecraft.webp" class="card-img-top" alt="Minecraft">
-                        <div class="card-body text-dark d-flex flex-column">
-                            <h5 class="card-title">Minecraft</h5>
-                            <p class="card-text">Minecraft é um jogo de sobrevivência.</p>
-                           <a href="#" class="btn btn-outline-dark mt-auto">Comprar</a>
-                        </div>
+                <div class="card border-dark m-3">
+                    <img src="imagens/minecraft.webp" class="card-img-top" alt="Minecraft">
+                    <div class="card-body text-dark d-flex flex-column">
+                        <h5 class="card-title">Minecraft</h5>
+                        <p class="card-text">Minecraft é um jogo sobre blocos, aventuras e sobrevivência.</p>
+                        <a href="#" class="btn btn-outline-dark mt-auto">Comprar</a>
+                    </div>
+                </div>
+                <div class="card border-dark m-3">
+                    <img src="imagens/gtaV.jpg" class="card-img-top" alt="GTA 5">
+                    <div class="card-body text-dark d-flex flex-column">
+                        <h5 class="card-title">GTA V</h5>
+                        <p class="card-text">GTA V é um jogo eletrônico de ação-aventura.</p>
+                        <a href="#" class="btn btn-outline-dark mt-auto">Comprar</a>
                     </div>
                 </div>
             </div>
-            <h1 class="text-center">Jogos</h1>
+
+            <h1 class="text-center" id="aventura">Ação e Aventura</h1>
             <hr>
-            <h2 class="text-center">Ação e Aventura</h2>
             <div class="slider">
-                <div class="card border-dark mb-3">
-                    <img src="imagens/minecraft.webp" class="card-img-top" alt="Minecraft">
-                    <div class="card-body text-dark">
-                        <h5 class="card-title">Minecraft</h5>
-                        <p class="card-text">Minecraft é um jogo de sobrevivência.</p>
-                        <a href="#" class="btn btn-dark">Comprar</a>
+                <div class="card border-dark m-3">
+                    <img src="imagens/control.webp" class="card-img-top" alt="Control">
+                    <div class="card-body text-dark d-flex flex-column">
+                        <h5 class="card-title">Control</h5>
+                        <p class="card-text">Control é uma aventura de ação sobrenatural em terceira pessoa que desafia
+                            você a dominar habilidades surreais.</p>
+                        <a href="#" class="btn btn-outline-dark mt-auto">Comprar</a>
                     </div>
                 </div>
-                <div class="card border-dark mb-3">
-                    <img src="imagens/minecraft.webp" class="card-img-top" alt="Minecraft">
-                    <div class="card-body text-dark">
-                        <h5 class="card-title">Minecraft</h5>
-                        <p class="card-text">Minecraft é um jogo de sobrevivência.</p>
-                        <a href="#" class="btn btn-dark">Comprar</a>
+                <div class="card border-dark m-3">
+                    <img src="imagens/horizon.webp" class="card-img-top" alt="Horizon Zero Dawn">
+                    <div class="card-body text-dark d-flex flex-column">
+                        <h5 class="card-title">Horizon Zero Dawn</h5>
+                        <p class="card-text">Uma era na qual máquinas vagam livremente e a humanidade deixou de ser a
+                            espécie dominante, uma jovem inicia uma jornada seu destino.</p>
+                        <a href="#" class="btn btn-outline-dark mt-auto">Comprar</a>
+                    </div>
+                </div>
+                <div class="card border-dark m-3">
+                    <img src="imagens/god-of-war-ragnarok.jpg" class="card-img-top" alt="God of War Ragnarök">
+                    <div class="card-body text-dark d-flex flex-column">
+                        <h5 class="card-title">God of War Ragnarök</h5>
+                        <p class="card-text">Kratos e Atreus embrenham-se pelos Nove Reinos em busca de respostas,
+                            enquanto as forças asgardianas preparam-se para guerra.</p>
+                        <a href="#" class="btn btn-outline-dark mt-auto">Comprar</a>
+                    </div>
+                </div>
+                <div class="card border-dark m-3">
+                    <img src="imagens/tomb-raider.jpg" class="card-img-top" alt="Tomb Raider">
+                    <div class="card-body text-dark d-flex flex-column">
+                        <h5 class="card-title">Tomb Raider GOTY</h5>
+                        <p class="card-text">Lara deve lutar para
+                            desvendar a história sombria de uma ilha esquecida a fim de escapar de seu domínio
+                            impiedoso.</p>
+                        <a href="#" class="btn btn-outline-dark mt-auto">Comprar</a>
+                    </div>
+                </div>
+                <div class="card border-dark m-3">
+                    <img src="imagens/assassins-creed-valhalla.png" class="card-img-top"
+                        alt="Assassin's Creed Valhalla">
+                    <div class="card-body text-dark d-flex flex-column">
+                        <h5 class="card-title">Assassin's Creed Valhalla</h5>
+                        <p class="card-text">Eivor, um guerreiro viking lendário em busca de glória. Explore a Idade das
+                            Trevas da Inglaterra enquanto ataca seus inimigos.</p>
+                        <a href="#" class="btn btn-outline-dark mt-auto">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <h1 class="text-center" id="terror">Terror</h1>
+            <hr>
+            <div class="slider">
+                <div class="card border-dark m-3">
+                    <img src="imagens/little-nightmares.webp" class="card-img-top" alt="Little Nightmares 2">
+                    <div class="card-body text-dark d-flex flex-column">
+                        <h5 class="card-title">Little Nightmares II</h5>
+                        <p class="card-text">Enquanto a relação
+                            Mono e Six cresce, a dupla deve trabalhar junta para superar enigmas
+                            complexos e inimigos horripilantes.</p>
+                        <a href="#" class="btn btn-outline-dark mt-auto">Comprar</a>
+                    </div>
+                </div>
+                <div class="card border-dark m-3">
+                    <img src="imagens/the-evil-within.jpg" class="card-img-top" alt="The Evil Within">
+                    <div class="card-body text-dark d-flex flex-column">
+                        <h5 class="card-title">The Evil Within</h5>
+                        <p class="card-text">Com recursos limitados, você irá lutar pela sobrevivência e experimentar um
+                            medo profundo nesta mistura
+                            perfeita de horror e ação.</p>
+                        <a href="#" class="btn btn-outline-dark mt-auto">Comprar</a>
+                    </div>
+                </div>
+                <div class="card border-dark m-3">
+                    <img src="imagens/evil-dead.jpg" class="card-img-top" alt="Evil Dead">
+                    <div class="card-body text-dark d-flex flex-column">
+                        <h5 class="card-title">Evil Dead; The Game</h5>
+                        <p class="card-text">Seja do Bem ou do Mal - Lute pelas forças do bem ou assuma o controle do
+                            poderoso Demônio Kandariano para caçar
+                            outros jogadore!</p>
+                        <a href="#" class="btn btn-outline-dark mt-auto">Comprar</a>
+                    </div>
+                </div>
+                <div class="card border-dark m-3">
+                    <img src="imagens/village.webp" class="card-img-top" alt="Resident Evil Village">
+                    <div class="card-body text-dark d-flex flex-column">
+                        <h5 class="card-title">Resident Evil Village</h5>
+                        <p class="card-text">Ethan Winters e sua esposa, Mia, quando estavam começando a construir a
+                            nova vida, ocorre uma nova tragédia.</p>
+                        <a href="#" class="btn btn-outline-dark mt-auto">Comprar</a>
+                    </div>
+                </div>
+                <div class="card border-dark m-3">
+                    <img src="imagens/layers-of-fear.webp" class="card-img-top" alt="Layers of Fear">
+                    <div class="card-body text-dark d-flex flex-column">
+                        <h5 class="card-title">Layers of Fear</h5>
+                        <p class="card-text">
+                            Entre na mente de um pintor e descubra os segredos de sua loucura, explore a mansão e
+                            descubra visões, medos e horrores.</p>
+                        <a href="#" class="btn btn-outline-dark mt-auto">Comprar</a>
                     </div>
                 </div>
             </div>
@@ -158,14 +237,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Slick JS -->
     <script src="js/slick/slick.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.slider').slick({
-                autoplay: true,
-                autoplaySpeed: 1800
-            });
-        });
-    </script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

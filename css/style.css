@@ -7,6 +7,16 @@
     font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
 body { 
     display: flex;
     flex-direction: column;
@@ -19,4 +29,27 @@ main {
 
 nav h1 a {
     font-weight: bolder;
+}
+
+img {
+    height: 50vh;
+}
+
+#slick-slide-control00::before,
+#slick-slide-control01::before, 
+#slick-slide-control02::before,
+#slick-slide-control03::before,
+#slick-slide-control04::before,
+#slick-slide-control05::before,
+#slick-slide-control10::before,
+#slick-slide-control11::before,
+#slick-slide-control12::before,
+#slick-slide-control13::before,
+#slick-slide-control14::before,
+#slick-slide-control20::before,
+#slick-slide-control21::before,
+#slick-slide-control22::before,
+#slick-slide-control23::before,
+#slick-slide-control24::before {
+    color: white;
 }
